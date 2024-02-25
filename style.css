@@ -36,6 +36,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin-top: 60px;
 }
@@ -51,14 +52,15 @@ body {
   border: 2px #464646 solid;
   border-radius: 16px;
 }
-.game-card__desc-title {
-}
 .game-card__desc-list {
+  list-style: none;
+}
+/* .game-card__desc-title {
 }
 .game-card__desc-list-el {
 }
 .game-card__img {
-}
+} */
 
 .game-card:nth-child(2n) .game-card__img {
   order: -1;
@@ -67,4 +69,47 @@ body {
   color: #ff3c3c;
   text-shadow: 0px 0px 20px rgba(255,60,60,0.75);
   font-weight: 500;
+}
+
+@media(max-width: 1300px){
+    .title{
+      font-size: 72px;
+    }
+    .paragraph{
+      font-size: 20px;
+    }
+    .wrapper{
+      max-width: 900px;
+    } 
+    .game-card__desc-list-el {
+      font-size: 20px;
+    }
+    .game-card__img{
+      height: 185px;
+    }
+    .game-card__desc{
+      width: 550px;
+      height: 220px;
+    }
+}
+
+@media(max-width: 1100px){
+  .wrapper{
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .game-card__desc{
+    width: 515px;
+  }
+}
+
+@media(max-width: 1000px){
+  .wrapper{
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  .game-card__desc{
+    width: 500px;
+    height: 200px;
+}
 }
