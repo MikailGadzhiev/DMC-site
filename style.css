@@ -7,10 +7,11 @@
   color: #fff;
   font-size: 24px;
   font-weight: 300;
+  transition: ease-in-out 0.25s;
 }
 
 body {
-  background-color: #161616;
+  background-color: #0f0f0f;
 }
 
 .wrapper {
@@ -62,13 +63,28 @@ body {
 .game-card__img {
 } */
 
-.game-card:nth-child(2n) .game-card__img {
+.game-card:nth-child(2n) a {
   order: -1;
 }
 .red-text {
   color: #ff3c3c;
-  text-shadow: 0px 0px 20px rgba(255, 60, 60, 0.75);
+  text-shadow: 0px 0px 20px rgba(255, 60, 60, 0.9);
   font-weight: 500;
+}
+
+.game-card a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-card a:hover {
+  transform: scale(95%);
+  filter: brightness(60%);
+}
+.game-card__desc-title {
+  font-size: 32px;
+  color: #ff3c3c;
 }
 
 @media (max-width: 1300px) {
@@ -91,6 +107,10 @@ body {
     width: 550px;
     height: 220px;
   }
+  .game-card__desc-title {
+    font-size: 32px;
+    color: #ff3c3c;
+  }
 }
 
 @media (max-width: 1100px) {
@@ -100,6 +120,10 @@ body {
   }
   .game-card__desc {
     width: 515px;
+  }
+  .game-card__desc-title {
+    font-size: 32px;
+    color: #ff3c3c;
   }
 }
 
@@ -111,6 +135,9 @@ body {
   .game-card__desc {
     width: 500px;
     height: 200px;
+  }
+  .game-card__desc-title {
+    font-size: 32px;
   }
 }
 
@@ -137,7 +164,7 @@ body {
     font-size: 4vw;
   }
   .game-card__desc-title {
-    font-size: 4vw;
+    font-size: 5vw;
   }
   .game-card {
     display: flex;
@@ -145,7 +172,7 @@ body {
     height: 100%;
     margin-bottom: 20vw;
   }
-  .game-card:nth-child(2n) .game-card__img {
+  .game-card:nth-child(2n) a {
     order: 1;
   }
   .red-text {
