@@ -56,12 +56,6 @@ body {
 .game-card__desc-list {
   list-style: none;
 }
-/* .game-card__desc-title {
-}
-.game-card__desc-list-el {
-}
-.game-card__img {
-} */
 
 .game-card:nth-child(2n) a {
   order: -1;
