@@ -223,6 +223,7 @@ body {
   }
   .footer {
     height: 103vw;
+    margin: 35px 0px 35px 0px;
   }
   .footer__logo {
     margin-top: 7vw;
@@ -237,8 +238,7 @@ body {
   .footer__info-block:nth-child(3) {
     order: 4;
   }
-  
-  .wrapper-line {
+  .wrapper-line{
     margin-top: 0px;
   }
 }
