@@ -237,4 +237,7 @@ body {
   .footer__info-block:nth-child(3) {
     order: 4;
   }
+  .wrapper-line {
+    margin-top: 0px;
+  }
 }
